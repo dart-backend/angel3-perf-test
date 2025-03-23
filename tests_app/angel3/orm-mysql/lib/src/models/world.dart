@@ -11,6 +11,6 @@ part 'world.g.dart';
 abstract class _World {
   int? id;
 
-  @Column()
+  @Column(name: "randomNumber")
   int? randomNumber;
 }
