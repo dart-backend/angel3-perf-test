@@ -1,4 +1,4 @@
-# angel3-perf-test
+# Angel3 framework performance tests
 
 This repository contains the code for running performance tests on Angel3 framework using Locust framework
 
@@ -26,10 +26,10 @@ Setup the environment for development and executing the load tests
         ./venv/Scripts/activate
     ```
 
-2. Run the test cases
+2. Launch the Locust load test server
 
     ```bash
-        locust -f tests_suite/load_tests/001_test.py --host http://localhost:8080
+        locust -f tests_suite/load_tests/000_template.py --host http://localhost:8080
     ```
 
-3. Open the link in the browser
+3. Open the provided link in the browser to run the load tests
