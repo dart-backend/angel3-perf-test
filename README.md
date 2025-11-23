@@ -29,7 +29,7 @@ Setup the environment for development and executing the load tests
 2. Launch the Locust load test server
 
     ```bash
-        locust -f tests_suite/load_tests/000_template.py --host http://localhost:8080
+        locust -f tests_suite/load_tests/001-basic.py --host http://localhost:3000
     ```
 
 3. Open the provided link in the browser to run the load tests
