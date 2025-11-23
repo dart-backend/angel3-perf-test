@@ -1,6 +1,6 @@
 services:
   mariadb:
-    image: mariadb:latest
+    image: docker.io/mariadb:latest
     restart: "no"
     ports:
       - "3306:3306"
