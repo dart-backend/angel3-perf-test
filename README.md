@@ -23,7 +23,7 @@ Setup the environment for development and executing the load tests
 1. Run the following command to enable the local python environment
 
     ```bash
-        ./venv/bin/activate
+        source ./venv/bin/activate
     ```
 
 2. Launch the Locust load test server
