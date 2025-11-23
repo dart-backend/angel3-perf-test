@@ -1,0 +1,24 @@
+services:
+  mariadb:
+    image: docker.io/mariadb:latest
+    restart: "no"
+    ports:
+      - "3306:3306"
+    environment:
+      - MARIADB_ROOT_PASSWORD=Qwerty
+      - MARIADB_DATABASE=hello_world
+      - MARIADB_USER=benchmarkdbuser
+      - MARIADB_PASSWORD=benchmarkdbpass
+    networks:
+      - appnet
+
+  adminer:
+    image: adminer:latest
+    restart: "no"
+    ports:
+      - 8000:8080
+    networks:
+      - appnet
+     
+networks:
+  appnet:
